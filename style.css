@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Faustina:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Alegreya Medium:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ovo:400,500,600,700&display=swap");
+
+:root {
+  --pink-color: #f2726a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin-top: 7%;
+  height: 100%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.card {
+  width: 500px;
+  height: 74%;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #242628;
+  overflow: hidden;
+  margin: 0 30px;
+}
+
+.card__img {
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  margin: 0 auto;
+  transform: translateY(25px);
+  border-radius: 50%;
+  border: 4px solid var(--pink-color);
+  cursor: pointer;
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+h2 {
+  color: white;
+  margin-top: 40px;
+  font-family: "Alegreya Medium";
+}
+
+p {
+  color: var(--pink-color);
+}
+
+.card-info {
+  color: #fff;
+  font-family: "Faustina", sans-serif;
+  font-size: 20px;
+  width: 80%;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.or-one {
+  border-top: 2px solid var(--pink-color);
+  width: 80%;
+  margin-left: 50px;
+}
+
+.card__social a {
+  text-decoration: none;
+  color: white;
+  margin: 20px 15px 30px;
+  display: inline-block;
+  font-size: 20px;
+  transition: 0.25s;
+}
+
+.card__social a:hover {
+  color: var(--pink-color);
+}
+
+.full-name {
+  color:#fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+
+
+.phone-item i {
+  color: var(--pink-color);
+  margin-left: -28px;
+}
+
+
+.gmail-item i,
+.map-item i {
+  color: var(--pink-color);
+}
+
+.gmail-item a,
+.map-item a,
+.phone-item a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: 0.25s;
+}
+
+.phone-item,
+.gmail-item,
+.map-item {
+  margin: 5px 0 15px 10px;
+}
+
+.phone-item a:hover,
+.gmail-item a:hover,
+.map-item a:hover{
+  color: var(--pink-color);
+}
+
+.dropdown-value {
+  outline: none;
+  border: none;
+  color: white;
+  background-color: transparent;
+  border: 1px solid var(--pink-color);
+  padding: 10px 25px;
+  margin: -10px 0 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.dropdown-value:hover {
+  background-color: var(--pink-color);
+}
